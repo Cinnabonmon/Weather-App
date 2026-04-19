@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
     <title>Frontend Mentor | Weather app</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 0.6875rem;
@@ -26,9 +21,36 @@
     </style>
   </head>
   <body>
-    Units Switch to Imperial/Metric Temperature Celsius (°C) Fahrenheit (°F)
-    Wind Speed km/h mph Precipitation Millimeters (mm) Inches (in) How's the sky
-    looking today? Search for a city, e.g., New York Search Feels like
+    <div class="topbar">
+      <img id="logo" src="./assets/images/logo.svg" alt="Weather App logo" />
+      <div class="unit-select">
+        <div class="unit-selected">
+          <img src="./assets/images/icon-units.svg" alt="Settings Icon" />
+          <p>Metric</p>
+          <div class="unit-options">
+            <ul>
+              <li>Metric</li>
+              <li>Imperial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="title">
+      <h1>How's the sky looking today?</h1>
+    </div>
+
+    <div class="search">
+      <div class="search-box">
+        <img src="./assets/images/icon-search.svg" alt="Search Icon" />
+        <input type="text" placeholder="Search for a city..." />
+      </div>
+      <button>Search</button>
+    </div>
+    Units Switch to Imperial/Metric Temperature Celsius (°C) Fahrenheit (°F) Wind Speed km/h mph
+    Precipitation Millimeters (mm) Inches (in) How's the sky looking today? Search for a city, e.g.,
+    New York Search Feels like
     <!-- Insert temperature here -->
 
     Humidity
@@ -48,9 +70,8 @@
 
     <footer class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
+      <a href="#">Your Name Here</a>.
     </footer>
   </body>
 </html>
-

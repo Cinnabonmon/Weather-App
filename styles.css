@@ -8,6 +8,16 @@
   --Neutral-0: hsl(0, 0%, 100%);
 }
 
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -17,4 +27,124 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--Neutral-900);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--Neutral-0);
+  margin: 2rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#logo {
+  width: 10rem;
+}
+
+.unit-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--Neutral-700);
+  width: 5.5rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.unit-options {
+  position: absolute;
+  top: 2.5rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  background-color: var(--Neutral-700);
+  width: 5.5rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.unit-options ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-flow: column;
+}
+
+.title {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+  height: 3rem;
+  margin-top: 1.8rem;
+}
+
+.search-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: var(--Neutral-700);
+  width: 25rem;
+  height: 2.3rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 1.3rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.search-box img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background-color: var(--Neutral-700);
+  color: var(--Neutral-0);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.search button {
+  background-color: #4757d1;
+  color: var(--Neutral-0);
+  padding: 0.5rem;
+  height: 2.3rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
