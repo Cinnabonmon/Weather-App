@@ -21,8 +21,10 @@
     </style>
   </head>
   <body>
+    <!-- Top bar with logo and unit selection -->
     <div class="topbar">
       <img id="logo" src="./assets/images/logo.svg" alt="Weather App logo" />
+      <!-- Selection of units -->
       <div class="unit-select">
         <div class="unit-selected">
           <img src="./assets/images/icon-units.svg" alt="Settings Icon" />
@@ -36,11 +38,12 @@
         </div>
       </div>
     </div>
-
+    <!-- Main content -->
+    <!-- Main Title -->
     <div class="title">
       <h1>How's the sky looking today?</h1>
     </div>
-
+    <!-- Search bar -->
     <div class="search">
       <div class="search-box">
         <img src="./assets/images/icon-search.svg" alt="Search Icon" />
@@ -48,26 +51,121 @@
       </div>
       <button>Search</button>
     </div>
+    <!-- Weather information -->
+    <div class="weather-box">
+      <div class="main-weather">
+        <div class="weather-bar">
+          <div class="weather-location">
+            <h4 id="location"></h4>
+            <p id="date"></p>
+          </div>
+          <div class="weather-temp">
+            <img id="current-icon" src="" alt="" />
+            <h1 id="temp"></h1>
+          </div>
+        </div>
+      </div>
+      <div class="weather-details-box">
+        <div class="feels-like">
+          <p id="feels-like"></p>
+          <p id="feels-like-detail"></p>
+        </div>
+        <div class="humidity">
+          <p id="humidity"></p>
+          <p id="humidity-detail"></p>
+        </div>
+        <div class="wind">
+          <p id="wind"></p>
+          <p id="wind-detail"></p>
+        </div>
+        <div class="precipitation">
+          <p id="precipitation"></p>
+          <p id="precipitation-detail"></p>
+        </div>
+      </div>
+      <div class="daily-forecast">
+        <div class="daily-forecast-box">
+          <p class="day"></p>
+          <img src="" alt="" class="weather-icon" />
+          <div class="high-low">
+            <p class="high"></p>
+            <p class="low"></p>
+          </div>
+        </div>
+        <div class="daily-forecast-box">
+          <p class="day"></p>
+          <img src="" alt="" class="weather-icon" />
+          <div class="high-low">
+            <p class="high"></p>
+            <p class="low"></p>
+          </div>
+        </div>
+        <div class="daily-forecast-box">
+          <p class="day"></p>
+          <img src="" alt="" class="weather-icon" />
+          <div class="high-low">
+            <p class="high"></p>
+            <p class="low"></p>
+          </div>
+        </div>
+        <div class="daily-forecast-box">
+          <p class="day"></p>
+          <img src="" alt="" class="weather-icon" />
+          <div class="high-low">
+            <p class="high"></p>
+            <p class="low"></p>
+          </div>
+        </div>
+        <div class="daily-forecast-box">
+          <p class="day"></p>
+          <img src="" alt="" class="weather-icon" />
+          <div class="high-low">
+            <p class="high"></p>
+            <p class="low"></p>
+          </div>
+        </div>
+        <div class="daily-forecast-box">
+          <p class="day"></p>
+          <img src="" alt="" class="weather-icon" />
+          <div class="high-low">
+            <p class="high"></p>
+            <p class="low"></p>
+          </div>
+        </div>
+        <div class="daily-forecast-box">
+          <p class="day"></p>
+          <img src="" alt="" class="weather-icon" />
+          <div class="high-low">
+            <p class="high"></p>
+            <p class="low"></p>
+          </div>
+        </div>
+      </div>
+      <div class="hourly-forecast">
+        <div class="hourly-title-bar">
+          <p>Hourly Forecast</p>
+          <div class="day-select">
+            <div class="hourly-day-selected">
+              <p id="hourly-day"></p>
+              <img src="./assets/images/icon-dropdown.svg" alt="" />
+              <div class="hourly-options" hidden>
+                <ul>
+                  <li>Monday</li>
+                  <li>Tuesday</li>
+                  <li>Wednesday</li>
+                  <li>Thursday</li>
+                  <li>Friday</li>
+                  <li>Saturday</li>
+                  <li>Sunday</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     Units Switch to Imperial/Metric Temperature Celsius (°C) Fahrenheit (°F) Wind Speed km/h mph
     Precipitation Millimeters (mm) Inches (in) How's the sky looking today? Search for a city, e.g.,
-    New York Search Feels like
-    <!-- Insert temperature here -->
-
-    Humidity
-    <!-- Insert humidity here -->
-
-    Wind
-    <!-- Insert wind here -->
-
-    Precipitation
-    <!-- Insert precipitation here -->
-
-    Daily forecast
-    <!-- Insert daily forecast for the next 7 days here -->
-
-    Hourly forecast
-    <!-- Insert hourly forecast for the selected day here -->
-
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
