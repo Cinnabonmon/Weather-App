@@ -52,19 +52,24 @@
       <button>Search</button>
     </div>
     <!-- Weather information -->
+    <!-- Weather temperature -->
     <div class="weather-box">
       <div class="main-weather">
-        <div class="weather-bar">
-          <div class="weather-location">
-            <h4 id="location"></h4>
-            <p id="date"></p>
-          </div>
-          <div class="weather-temp">
-            <img id="current-icon" src="" alt="" />
-            <h1 id="temp"></h1>
-          </div>
+        <img
+          src="./assets/images/bg-today-large.svg"
+          alt="Today's weather background"
+          id="weather-bg"
+        />
+        <div class="weather-location">
+          <h4 id="location">Miami</h4>
+          <p id="date">4/28/2026</p>
+        </div>
+        <div class="weather-temp">
+          <img id="current-icon" src="./assets/images/icon-rain.webp" alt="Rain" />
+          <h1 id="temp">20°</h1>
         </div>
       </div>
+      <!-- Weather details -->
       <div class="weather-details-box">
         <div class="feels-like">
           <p id="feels-like"></p>
@@ -83,6 +88,7 @@
           <p id="precipitation-detail"></p>
         </div>
       </div>
+      <!-- Daily forecast -->
       <div class="daily-forecast">
         <div class="daily-forecast-box">
           <p class="day"></p>
@@ -141,6 +147,7 @@
           </div>
         </div>
       </div>
+      <!-- Hourly forecast -->
       <div class="hourly-forecast">
         <div class="hourly-title-bar">
           <p>Hourly Forecast</p>
@@ -164,8 +171,8 @@
         </div>
       </div>
     </div>
-    Units Switch to Imperial/Metric Temperature Celsius (°C) Fahrenheit (°F) Wind Speed km/h mph
-    Precipitation Millimeters (mm) Inches (in) How's the sky looking today? Search for a city, e.g.,
+    <!-- Units Switch to Imperial/Metric Temperature Celsius (°C) Fahrenheit (°F) Wind Speed km/h mph
+    Precipitation Millimeters (mm) Inches (in) How's the sky looking today? Search for a city, e.g., -->
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
